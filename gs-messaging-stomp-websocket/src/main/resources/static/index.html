@@ -8,23 +8,32 @@
     <script src="/webjars/sockjs-client/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <script src="/app.js"></script>
+<script>
+var socket = new SockJS('/websocket');
+stompClient = Stomp.over(socket);
+stompClient.connect({}, function (frame) {
+    setConnected(true);
+    //alert('Connected: ' + frame);
+        
+    // nadsluchuj requesty websocketu odwolujace sie do app1
+    stompClient.subscribe('app1', function (greeting) {
+    	//stompClient.send("/server/user", {}, JSON.stringify({'name':'aaa'}));
+    	showGreeting(JSON.parse(greeting.body).content); //send message
+        //$("#greetings").append("<tr><td>" + message + "</td></tr>"); //show on website
+        //stompClient.disconnect(); // close socket connection
+    });
+
+    // wyslij jakas wiadomosc do app1
+    stompClient.send("/websocket/sendResponseTo/app1", {}, JSON.stringify({'name': 'test'}));
+    stompClient.send("/websocket/sendResponseTo/app2", {}, JSON.stringify({'name': 'test'}));
+
+});
+</script>
 </head>
 <body>
-<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
-    enabled. Please enable
-    Javascript and reload this page!</h2></noscript>
+
 <div id="main-content" class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <form class="form-inline">
-                <div class="form-group">
-                    <label for="connect">WebSocket connection:</label>
-                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
-                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
-                    </button>
-                </div>
-            </form>
-        </div>
+
         <div class="col-md-6">
             <form class="form-inline">
                 <div class="form-group">

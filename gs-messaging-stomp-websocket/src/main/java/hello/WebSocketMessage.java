@@ -1,13 +1,13 @@
 package hello;
 
-public class HelloMessage {
+public class WebSocketMessage {
 
     private String name;
 
-    public HelloMessage() {
+    public WebSocketMessage() {
     }
 
-    public HelloMessage(String name) {
+    public WebSocketMessage(String name) {
         this.name = name;
     }
 
