@@ -1,0 +1,25 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { WebSocketComponentComponent } from './web-socket-component.component';
+
+describe('WebSocketComponentComponent', () => {
+  let component: WebSocketComponentComponent;
+  let fixture: ComponentFixture<WebSocketComponentComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ WebSocketComponentComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(WebSocketComponentComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should be created', () => {
+    expect(component).toBeTruthy();
+  });
+});
