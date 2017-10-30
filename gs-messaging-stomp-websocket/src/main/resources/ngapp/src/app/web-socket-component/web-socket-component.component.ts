@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StompService } from 'ng2-stomp-service';
 import { Message } from '@stomp/stompjs';
 
@@ -8,6 +8,8 @@ import { Message } from '@stomp/stompjs';
   styleUrls: ['./web-socket-component.component.css']
 })
 export class WebSocketComponentComponent implements OnInit {
+
+  @Input() sendData : string;
 
   private subscription : any;
   private message : string;
@@ -38,7 +40,7 @@ public response = (data) => {
        });
        
        //send data 
-       stomp.send('app1',{"name":"some data"});
+       stomp.send('app1',{"name":this.sendData});
        
        //unsubscribe 
        // this.subscription.unsubscribe();
