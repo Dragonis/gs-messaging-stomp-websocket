@@ -9,21 +9,22 @@ import { Message } from '@stomp/stompjs';
 })
 export class WebSocketComponentComponent implements OnInit {
 
+
+  @Input() nrApp : string;
   @Input() sendData : string;
 
   private subscription : any;
   private message : string;
 
-  //response 
-public response = (data) => {
-  console.log(data)
-}
+    //response 
+  public response = (data) => {
+    console.log(data)
+  }
 
   constructor(stomp: StompService) {
-    
      //configuration 
      stomp.configure({
-       host:'http://localhost:8080/websocket',
+       host: "http://localhost:8080/websocket",
        debug:true,
        queue:{'init':false}
      });
@@ -34,13 +35,13 @@ public response = (data) => {
        console.log('connected');
        
        //subscribe 
-       this.subscription = stomp.subscribe('app1', function(msg){
+       this.subscription = stomp.subscribe(this.nrApp, function(msg){
           console.log(msg);
           WebSocketComponentComponent.prototype.message = JSON.stringify(msg);
        });
        
        //send data 
-       stomp.send('app1',{"name":this.sendData});
+       stomp.send(this.nrApp,{"content":this.sendData});
        
        //unsubscribe 
        // this.subscription.unsubscribe();
@@ -54,6 +55,7 @@ public response = (data) => {
     
     
    }
+   
 
   ngOnInit() {
   }

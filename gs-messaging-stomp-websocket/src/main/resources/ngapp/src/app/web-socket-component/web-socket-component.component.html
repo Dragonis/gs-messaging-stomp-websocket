@@ -1,8 +1,14 @@
 <section class="web-socket-component" >
 <h2> This is an information received from a websocket server: </h2>
 
+Number app: <input [(ngModel)]="nrApp" type="text" value="1"> <br>
+Example data: <input [(ngModel)]="sendData" type="text" value="example data"> <br>
+<button type="button" class="btn btn-default" (click)="null">Send message</button>
+
+
 <p>
   Web-socket-component works! <br>
+  Nr app: {{ nrApp }} <br>
   Example inserted data from component html tag: {{ sendData }} <br>
  Message received from a websocket: {{ message }}
 </p>

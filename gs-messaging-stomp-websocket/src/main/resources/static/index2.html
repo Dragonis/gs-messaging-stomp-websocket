@@ -24,8 +24,8 @@ stompClient.connect({}, function (frame) {
     });
 
     // wyslij jakas wiadomosc do app1
-    stompClient.send("/websocket/sendResponseTo/app1", {}, JSON.stringify({'name': 'test'}));
-    stompClient.send("/websocket/sendResponseTo/app2", {}, JSON.stringify({'name': 'test'}));
+    stompClient.send("app1", {}, JSON.stringify({"content":"index2"}));
+    stompClient.send("app2", {}, JSON.stringify({"content":"index2"}));
 
 });
 </script>

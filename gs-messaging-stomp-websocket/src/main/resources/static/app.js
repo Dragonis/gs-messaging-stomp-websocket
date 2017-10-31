@@ -1,7 +1,7 @@
 var stompClient = null;
 
 function sendName() {
-    stompClient.send("/websocket/sendResponseTo/app1", {}, JSON.stringify({'name': $("#name").val()}));
+    stompClient.send("app1", {}, JSON.stringify({'content': $("#name").val()}));
 }
 
 function showGreeting(message) {

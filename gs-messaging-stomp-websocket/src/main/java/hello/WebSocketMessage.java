@@ -2,20 +2,20 @@ package hello;
 
 public class WebSocketMessage {
 
-    private String name;
+    private String content;
 
     public WebSocketMessage() {
     }
 
-    public WebSocketMessage(String name) {
-        this.name = name;
+    public WebSocketMessage(String content) {
+        this.content = content;
     }
 
     public String getName() {
-        return name;
+        return content;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String content) {
+        this.content = content;
     }
 }
