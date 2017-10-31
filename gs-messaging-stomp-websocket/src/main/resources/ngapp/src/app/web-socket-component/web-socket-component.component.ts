@@ -13,6 +13,8 @@ export class WebSocketComponentComponent implements OnInit {
   @Input() nrApp : string;
   @Input() sendData : string;
 
+private stomp: StompService;
+
   private subscription : any;
   private message : string;
 
@@ -29,33 +31,42 @@ export class WebSocketComponentComponent implements OnInit {
        queue:{'init':false}
      });
      
-     //start connection 
-     stomp.startConnect().then(() => {
-       stomp.done('init');
-       console.log('connected');
-       
-       //subscribe 
-       this.subscription = stomp.subscribe(this.nrApp, function(msg){
-          console.log(msg);
-          WebSocketComponentComponent.prototype.message = JSON.stringify(msg);
-       });
-       
-       //send data 
-       stomp.send(this.nrApp,{"content":this.sendData});
-       
-       //unsubscribe 
-       // this.subscription.unsubscribe();
-       
-       //disconnect 
-       // stomp.disconnect().then(() => {
-       //   console.log( 'Connection closed' )
-       // })
-       
-     });
-    
+     this.stomp = stomp;
+    this.setSubscription();
     
    }
    
+
+setSubscription(){
+  //start connection 
+  this.stomp.startConnect().then(() => {
+    this.stomp.done('init');
+    console.log('connected');
+    
+    //subscribe 
+    this.subscription = this.stomp.subscribe(this.nrApp, function(msg){
+       console.log(msg);
+       WebSocketComponentComponent.prototype.message = JSON.stringify(msg);
+    });
+  
+    this.sendMessage(this.nrApp,this.sendData);
+  
+    //unsubscribe 
+    // this.subscription.unsubscribe();
+    
+    //disconnect 
+    // this.stomp.disconnect().then(() => {
+    //   console.log( 'Connection closed' )
+    // })
+    
+  });
+} 
+
+sendMessage(nrApp:string, sendData:string){
+   //send data 
+   this.stomp.send(nrApp,{"content":sendData});
+   
+}
 
   ngOnInit() {
   }
