@@ -11,11 +11,11 @@ public class WebSocketMessage {
         this.content = content;
     }
 
-    public String getName() {
+    public String getContent() {
         return content;
     }
 
-    public void setName(String content) {
+    public void setContent(String content) {
         this.content = content;
     }
 }

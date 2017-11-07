@@ -9,7 +9,4 @@ import { WebSocketComponentComponent } from './web-socket-component/web-socket-c
 export class AppComponent {
   private title = 'app';
 
-  constructor(){
-    
-  }
 }

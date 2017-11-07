@@ -1,13 +1,13 @@
 var stompClient = null;
 
-function sendName() {
-    stompClient.send("app1", {}, JSON.stringify({'content': $("#name").val()}));
-}
 
 function showGreeting(message) {
     $("#greetings").append("<tr><td>" + message + "</td></tr>");
 }
 
+function sendName() {
+    stompClient.send("/app/index1", {}, JSON.stringify({'content': $("#name").val()}));
+}
 function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);

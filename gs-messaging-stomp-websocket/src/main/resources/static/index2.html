@@ -9,14 +9,14 @@
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <script src="/app.js"></script>
 <script>
-var socket = new SockJS('/websocket');
+var socket = new SockJS('/gs-guide-websocket');
 stompClient = Stomp.over(socket);
 stompClient.connect({}, function (frame) {
     setConnected(true);
     //alert('Connected: ' + frame);
         
     // nadsluchuj requesty websocketu odwolujace sie do app1
-    stompClient.subscribe('app2', function (greeting) {
+    stompClient.subscribe('/topic/greetings', function (greeting) {
     	//stompClient.send("/server/user", {}, JSON.stringify({'name':'aaa'}));
     	showGreeting(JSON.parse(greeting.body).content); //send message
         //$("#greetings").append("<tr><td>" + message + "</td></tr>"); //show on website
@@ -24,8 +24,8 @@ stompClient.connect({}, function (frame) {
     });
 
     // wyslij jakas wiadomosc do app1
-    stompClient.send("app1", {}, JSON.stringify({"content":"index2"}));
-    stompClient.send("app2", {}, JSON.stringify({"content":"index2"}));
+    stompClient.send("/app/index1", {}, JSON.stringify({"content":"index2"}));
+    stompClient.send("/app/index2", {}, JSON.stringify({"content":"index2"}));
 
 });
 </script>

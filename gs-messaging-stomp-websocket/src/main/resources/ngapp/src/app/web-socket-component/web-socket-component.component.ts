@@ -10,62 +10,62 @@ import { Message } from '@stomp/stompjs';
 export class WebSocketComponentComponent implements OnInit {
 
 
-  @Input() nrApp : string;
-  @Input() sendData : string;
+  @Input() nrApp: string;
+  @Input() sendData: string;
 
-private stomp: StompService;
+  private stomp: StompService;
 
-  private subscription : any;
-  private message : string;
+  private subscription: any;
+  private message: string;
 
-    //response 
+    // response
   public response = (data) => {
-    console.log(data)
+    console.log(data);
   }
 
   constructor(stomp: StompService) {
-     //configuration 
+     // configuration
      stomp.configure({
-       host: "http://localhost:8080/websocket",
-       debug:true,
-       queue:{'init':false}
+       host: 'http://localhost:8085/gs-guide-websocket/',
+       debug: true,
+       queue: {'init': true}
      });
-     
+
      this.stomp = stomp;
     this.setSubscription();
-    
-   }
-   
 
-setSubscription(){
-  //start connection 
+   }
+
+
+setSubscription() {
+  // start connection
   this.stomp.startConnect().then(() => {
     this.stomp.done('init');
     console.log('connected');
-    
-    //subscribe 
-    this.subscription = this.stomp.subscribe(this.nrApp, function(msg){
+
+    // subscribe
+    this.subscription = this.stomp.subscribe('/topic/greetings', function(msg){
        console.log(msg);
        WebSocketComponentComponent.prototype.message = JSON.stringify(msg);
     });
-  
-    this.sendMessage(this.nrApp,this.sendData);
-  
-    //unsubscribe 
+
+    this.sendMessage(this.nrApp, this.sendData);
+
+    // unsubscribe
     // this.subscription.unsubscribe();
-    
-    //disconnect 
+
+    // disconnect
     // this.stomp.disconnect().then(() => {
     //   console.log( 'Connection closed' )
     // })
-    
-  });
-} 
 
-sendMessage(nrApp:string, sendData:string){
-   //send data 
-   this.stomp.send(nrApp,{"content":sendData});
-   
+  });
+}
+
+sendMessage(nrApp: string, sendData: string) {
+   // send data
+   this.stomp.send(nrApp, {'content': sendData});
+
 }
 
   ngOnInit() {
