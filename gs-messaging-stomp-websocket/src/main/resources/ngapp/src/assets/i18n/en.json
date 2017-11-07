@@ -1,0 +1,576 @@
+{
+  "common": {
+    "search": "Search",
+    "add": "Add",
+    "edit": "Edit",
+    "back": "Go back",
+    "save": "Save",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "close": "Close",
+    "download": "Download"
+  },
+
+  "validation": {
+    "required": "This field is required",
+    "differentPasswords": "Different passwords",
+    "email": "Invalid e-mail"
+  },
+
+  "dialog": {
+    "confirm": {
+        "delete": {
+            "title": "Deleting item",
+            "message": "Are you sure to delete? Operation can not be undone"     
+        },
+        "deactivateGuard": {
+            "title": "Values modified",
+            "message": "Discard changes?"
+        }
+    },
+    "alert": {
+          "generic": {
+              "title": "Server error",
+              "message": "Service is temporarily unavailable"
+          },
+          "notFound": {
+              "title": "An error occured",
+              "message": "Resource not found"
+          },
+        "permissionDenied": {
+            "title": "Access denied",
+            "message": "You do not have permission"
+        },
+        "sessionExpired": {
+            "title": "Session expired",
+            "message": "Please log in again"
+        }
+    }
+  },
+
+  "table": {
+    "pagination": {
+      "numberOfRows": "Number of rows:",
+      "page": "Page",
+      "of": "of"
+    }
+  },
+
+  "menu": {
+    "analysisReport": "Analysis",
+    "controlReport": "Control",
+    "evidenceReport": "Evidence",
+    "infoReport": "Info",
+    "recordsReport": "Records",
+    "reportArticlePairs": "Article pairs",
+    "reportArticleDefinitions": "Article definitions",
+    "reportArticlesRevenueAndExpenditure": "Articles on revenue and expenditure documents",
+    "reportArticlesWithoutExpenditure": "Articles without expenditure",
+    "reportArticlesRotation": "Document register",
+    "reportArticlesPurchased": "Articles purchased",
+    "reportCodePrintout": "Codes printout",
+    "reportCompareTheNumberOfDocuments": "Compare the number of documents",
+    "reportDiscountCard": "Discount card customers",
+    "reportDiscountCardGeneral": "Discount card customers (general)",
+    "reportDocumentRegister": "Document register MM",
+    "reportDocuments": "Documents",
+    "reportInventarization": "Inventorization",
+    "reportList": "Report list",
+    "reportMyBills": "My bills",
+    "reportOwnCost": "Own cost",
+    "reportPriceDiff": "Price difference",
+    "reportRotation": "Rotation",
+    "reportRotationAndSaleInTwoTerms": "Rotation and sale in two terms",
+    "reportSalesArticlesByRecords": "Sales articles by records",
+    "reportSalesArticlesByStructure": "Sales articles by structure",
+    "reportSalesAnalysis": "Sales analysis",
+    "reportSalesByRecordsAndMargin": "Sales by records and margin",
+    "reportSalesByStructureAndShare": "Sales by structure and share",
+    "reportSalesByStructureAndMargin": "Sales by structure and share",
+    "reportSalesByProducers": "Sales by producers",
+    "reportSalesWeekly": "Sales weekly",
+    "reportSalesArticlesComparison": "Comparison sales of articles",
+    "reportSalesReceipt": "Sales receipt",
+    "reportStore": "Store report",
+    "reportSupplyComparative": "Supply comparative",
+    "reportSupplyDay": "Supply day",
+    "reportVatSalesRegister": "VAT sales register",
+    "resourcesReport": "Resources",
+    "summaryReport": "Summary",
+    "users": "Users"
+  },
+
+  "auth": {
+    "loginPanel": "Login panel",
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign in",
+    "invalidCredentials": "Invalid username or password",
+    "signOut": "Sign out",
+    "backToGateway": "Go to application menu"
+  },
+
+  "article": {
+    "name": "Article name",
+    "barcode": "Barcode"
+  },
+
+  "articleList": {
+    "name": "Article list name",
+    "type": "Type",
+    "approved": "Approved",
+    "article": {
+      "name": "Article name"
+    }
+  },
+
+  "brandAttribute": {
+    "title": "Brand attributes",
+    "description": "Brand attribute description",
+    "id": "Brand attribute",
+    "search": "Search by brand attribute or description"
+  },
+
+  "contractor": {
+    "title": "Contractors",
+    "name": "Contractor name",
+    "symbol": "Symbol"
+  },
+
+  "documentType": {
+    "id": "Document type",
+    "documentTypeGroup": "Document group",
+    "name": "Name"
+  },
+
+  "location": {
+    "title": "Locations",
+    "name": "Location name",
+    "symbol": "Symbol"
+  },
+
+  "measureUnit": {
+    "title": "Measure units",
+    "name": "Measure unit name",
+    "symbol": "Symbol",
+    "search": "Search by measure unit's name or symbol"
+  },
+
+  "orderUnit": {
+    "title": "Order units",
+    "description": "Description",
+    "id": "Order unit",
+    "search": "Search by order unit or description"
+  },
+
+  "producer": {
+    "title": "Producers",
+    "name": "Producer name",
+    "symbol": "Symbol",
+    "search": "Search by producer name or symbol"
+  },
+
+  "report": {
+    "article": {
+      "self": "Article",
+      "attributes": "Article attributes",
+      "status": {
+        "self": "Article status",
+        "": "All",
+        "0": "Active",
+        "1": "Removed",
+        "2": "Forbidden for buy",
+        "3": "Forbidden for sale",
+        "4": "Frozen"
+      },
+      "structure": {
+        "level": "Level",
+        "self": "Article structure",
+        "number": "Number"
+      },
+      "list": "Article list"
+    },
+    "brandAttribute": "Brand attribute",
+    "cashRegister": {
+      "self": "Cash register",
+      "all": "All"
+    },
+    "cardNumber": "Card number",
+    "contractor": "Contractor",
+    "date": {
+      "from": "Date from",
+      "self": "Date",
+      "to": "Date to"
+    },
+    "documents": {
+      "self": "Documents",
+      "fa": "VAT invoice",
+      "fap": "VAT invoice for the receipt",
+      "kfa": "Correction of VAT invoice",
+      "kfap": "Correction of VAT invoices to the receipt",
+      "mmm": "Shift expenditure",
+      "par": "Receipt",
+      "ps": "Damage report",
+      "rw": "Internal expenditure",
+      "wz": "External edition",
+      "zwd": "Return to supplier",
+      "zwp": "Return on sales"
+    },
+    "documentType": {
+      "self": "Document types",
+      "multi": "Document types",
+      "all": "All types of documents"
+    },
+    "format": "Report format",
+    "identyfication": {
+      "self": "Identyfication",
+      "firstName": "First name",
+      "lastName": "Last name"
+    },
+    "inputGroup": {
+      "dates": "Dates",
+      "store": "Store"
+    },
+    "location": "location",
+    "mask": {
+      "barcode": "Barcode contain",
+      "description": "Description contain",
+      "name": "Name contain",
+      "pkwiu": "PKWiU contain",
+      "sww": "SWW contain"
+    },
+    "measurementUnit": "Measure unit",
+    "minSupplierPriority": {
+      "self": "Min supplier proiority",
+      "1000": "All",
+      "1001": "Empty"
+    },
+    "orderDirection": {
+      "self": "Direction",
+      "asc": "Ascending",
+      "desc": "Descending"
+    },
+    "orderUnit": "Order unit",
+    "others": "Others",
+    "producer": "Producer",
+    "supplier": "Supplier",
+    "send": "Send",
+    "sortBy": {
+      "self": "Sort by",
+      "asc": "Ascending",
+      "articleName": "Article name",
+      "barCode": "Barcode",
+      "codes": "Codes",
+      "date": "Dates",
+      "desc": "Descending",
+      "kod": "Article code",
+      "name": "Article name",
+      "nazwa": "Article name",
+      "structure6Level": "6th article atructure level"
+    },
+    "states": {
+      "self": "States",
+      ">0": " > 0",
+      "<0": " < 0",
+      "=0": " = 0 ",
+      "<>": " <> ",
+      "all": "all",
+      "od-do": "from - to",
+      "from": "From",
+      "to": "To"
+    },
+    "store": {
+      "self": "Store",
+      "multi": "Stores",
+      "all": "All stores"
+    },
+    "onlySum": "Only summary",
+    "vat": "VAT",
+    "quantityArticlesHighestMargin": "The quantity of goods with the highest margins",
+    "quantityArticlesLowestMargin": "The quantity of goods with the lowest margins"
+  },
+
+  "reportArticlePairs": {
+      "title": "Article pairs - receipts",
+      "minQuantityReceipt": "Minimum receipts"
+  },
+
+  "reportArticleDefinitions": {
+    "title": "Article definitions"
+  },
+
+  "reportArticlesRevenueAndExpenditure": {
+    "title": "Articles on revenue and expenditure documents",
+    "dates": {
+      "dateRevenue": "Terms revenue",
+      "dateExpenditure": "Terms expenditure"
+    },
+    "articlesStructureDiscount": "Articles structure - discount",
+    "prefix": "Prefix"
+  },
+
+  "reportArticlesWithoutExpenditure": {
+    "title": "Articles without expenditure",
+    "numberOfDays": "Number of days"
+  },
+
+  "reportArticlesRotation": {
+    "title": "Document register"
+  },
+
+  "reportArticlesPurchased": {
+   "title": "Articles purchased",
+   "storesView": "Articles without split into shops"
+  },
+
+  "reportDialog": {
+    "actionDate": "Generated date",
+    "downloadNew": "Download new report",
+    "fileName": "File name",
+    "title": "A new report has been generated",
+    "errorTitle": "The report has not been generated",
+    "errorMessage": "An error occurred while generating the report"
+  },
+
+  "reportCodePrintout": {
+   "title": "Codes printout",
+   "group": "Split on dates",
+   "groupBy": {
+     "self": "Permission group",
+     "administrator": "Administrator",
+     "serwis": "Servis",
+     "kierownik": "Manager",
+     "operator": "Operator"
+   },
+   "sourcePrint": {
+     "self": "Printout source",
+     "0": "All",
+     "1": "Printout explorer",
+     "2": "After approved of the discount",
+     "3": "Articles explorer",
+     "4": "Supply"
+   }
+  },
+
+  "reportCompareTheNumberOfDocuments": {
+    "title": "Compare the number of documents"
+  },
+
+  "reportDiscountCard": {
+    "title": "Discount card customers"
+  },
+
+  "reportDiscountCardGeneral": {
+    "title": "Discount card customers (general)"
+  },
+
+  "reportDocumentRegister": {
+    "title": "Document register MM",
+    "mmp": "Shift MM+",
+    "mmm": "Shift MM-"
+  },
+
+  "reportDocuments": {
+    "title": "Documents",
+    "par": "Attach a receipts"
+  },
+
+  "reportInventarization": {
+    "title": "Inventorization",
+    "multi": "Inventorizations",
+    "order": {
+      "quantitySurplusAsc": "Surplus quantity asc",
+      "quantityDeficitAsc": "Deficit quantity asc",
+      "valueSurplusAsc": "Surplus value asc",
+      "valueDeficitAsc": "Deficit value asc",
+      "quantitySurplusDesc": "Surplus quantity desc",
+      "quantityDeficitDesc": "Deficit quantity desc",
+      "valueSurplusDesc": "Surplus value desc",
+      "valueDeficitDesc": "Deficit value desc",
+      "name": "Name",
+      "group": "Group"
+    },
+    "onlyNegativeStates": "Only negative states"
+  },
+
+  "reportList": {
+    "title": "Report list",
+    "name": "Report name",
+    "date": "Generated date",
+    "status": {
+      "self": "Report status",
+      "0": "Started",
+      "1": "Finished"
+    },
+    "actions": {
+      "self": "Actions",
+      "download": "Download",
+      "remove": "Remove"
+    }
+  },
+
+  "reportMyBills": {
+   "title": "My bills"
+  },
+
+  "reportOwnCost": {
+    "title": "Own cost"
+  },
+
+  "reportPriceDiff": {
+    "title": "Differences from established purchase prices"
+  },
+
+  "reportRotation": {
+    "title": "Rotation",
+    "articles": {
+      "self": "Articles rotation",
+      "rotationFrom": "Rotation from",
+      "rotationTo": "Rotation to",
+      "minDaysLackSupply": "Minimum number of days for empty supply",
+      "quantityLackSupply": "Quantity of articles accepted for empty supply"
+    },
+    "rotationType": {
+      "self": "Rotation by",
+      "article": "Article",
+      "structure": "Article structure"
+    }
+  },
+
+  "reportRotationAndSaleInTwoTerms": {
+    "title": "Rotation and sale in two terms"
+  },
+
+  "reportSalesArticlesByRecords": {
+    "title": "Sales articles by records",
+    "margin": {
+      "self": "Margin",
+      "od": "Od",
+      "do": "Do"
+    },
+    "showStockStatus": "Show magazine states",
+    "showZeroArticles": "Show zero articles"
+  },
+
+  "reportSalesArticlesByStructure": {
+    "title": "Sales articles by structure"
+  },
+
+  "reportSalesAnalysis": {
+    "title": "Sales analysis",
+    "quantity": "Number of displayed articles",
+    "quantityAll": "All",
+    "sortByOut": {
+      "self":"External sorting",
+      "articleName": "Article name",
+      "quantity": "Quantity",
+      "purchaseValue": "Purchase value",
+      "saleValue": "Sales value",
+      "margin": "Margin"
+    },
+    "sortByIn": {
+      "self": "Internal sorting",
+      "storeNumber": "Store number",
+      "quantity": "Quantity",
+      "purchaseValue": "Purchase value",
+      "saleValue": "Sales value",
+      "margin": "Margin",
+      "marginPercent": "Margin percent",
+      "rotation": "Rotation"
+    },
+    "rotationFrom": "Rotation from",
+    "rotationTo": "Rotation to",
+    "minDaysLackSupply": "Minimum number of days of no stock",
+    "quantityLackSupply": "Quantity of product accepted for lack of stock"
+  },
+
+  "reportSalesByRecordsAndMargin": {
+    "title": "Sales by records and margin"
+  },
+
+  "reportSalesByArticleAndMargin": {
+    "title": "Sales by records and margin"
+  },
+
+  "reportSalesByStructureAndShare": {
+    "title": "Sale by structure and share"
+  },
+
+  "reportSalesByStructureAndMargin": {
+    "title": "Sale by structure and margin"
+  },
+
+  "reportSalesReceipt": {
+    "title": "Sales receipt"
+  },
+
+  "reportSalesByProducers": {
+    "title": "Sales by producers"
+  },
+
+  "reportSalesWeekly": {
+    "title": "Sales weekly"
+  },
+
+  "reportSalesArticlesComparison": {
+    "title": "Comparison sales of articles",
+    "zeroArticles": "Show articles with zero values"
+  },
+
+  "reportStore": {
+    "title": "Store report"
+  },
+
+  "reportSupplyComparative": {
+    "title": "Supply comparative",
+    "articlesView": "Article for individual stores",
+    "storesSum": "Summarty for individual stores",
+    "totalSum": "Summarty for all stores",
+    "purchaseNettoPrice": "Split on net purchase prices"
+  },
+
+  "reportSupplyDay": {
+    "title": "Supply"
+  },
+
+  "reportVatSalesRegister": {
+    "title": "VAT sales register"
+  },
+
+  "store": {
+    "number": "Store number",
+    "name": "Name"
+  },
+
+  "supplier": {
+    "title": "Suppliers",
+    "name": "Supplier name",
+    "symbol": "Symbol",
+    "search": "Search by supplier name or symbol"
+  },
+
+  "user": {
+    "title": "Users",
+    "username": "Username",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "permissionGroup": "Permission group",
+    "password": "Password",
+    "rePassword": "Confirm password",
+    "email": "E-mail",
+    "status": "Status",
+    "active": "Active",
+    "unactive": "Unactive",
+    "forAction": "user"
+  },
+
+  "vat": {
+    "rate": "VAT rate",
+    "value": "Value",
+    "symbol": "Symbol",
+    "description": "Description"
+  }
+
+}

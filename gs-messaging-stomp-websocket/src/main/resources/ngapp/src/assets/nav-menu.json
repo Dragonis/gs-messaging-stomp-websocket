@@ -1,0 +1,63 @@
+[
+  { "menuName": "controlReport", "label": "menu.controlReport", "showChildren": true, "children":
+    [
+      { "routerLink": "definicje_towarow", "label": "menu.reportArticleDefinitions" },
+      { "routerLink": "moje_rachunki", "label": "menu.reportMyBills" },
+      { "routerLink": "porownanie_ilosci_dokumentow", "label": "menu.reportCompareTheNumberOfDocuments" },
+      { "routerLink": "towary_na_dokumentach_przychodowych_i_rozchodowych", "label": "menu.reportArticlesRevenueAndExpenditure" },
+      { "routerLink": "towary_bez_rozchodu", "label": "menu.reportArticlesWithoutExpenditure" },
+      { "routerLink": "towary_z_roznica_cen", "label": "menu.reportPriceDiff" },
+      { "routerLink": "wydruk_kodow", "label": "menu.reportCodePrintout" },
+      { "routerLink": "zakupione_towary", "label": "menu.reportArticlesPurchased" }
+    ]
+  },
+
+  { "menuName": "evidenceReport", "label": "menu.evidenceReport", "showChildren": true, "children":
+    [
+      { "routerLink": "klienci_kart_rabatowych", "label": "menu.reportDiscountCard" },
+      { "routerLink": "klienci_kart_rabatowych_ogolni", "label": "menu.reportDiscountCardGeneral" },
+      { "routerLink": "raport_obrotu_towarow_rodz", "label": "menu.reportArticlesRotation" },
+      { "routerLink": "rejestr_dokumentow", "label": "menu.reportDocumentRegister" },
+      { "routerLink": "rotacja", "label": "menu.reportRotation" },
+      { "routerLink": "rotacja_i_sprzedaz_w_dwoch_terminach", "label": "menu.reportRotationAndSaleInTwoTerms" },
+      { "routerLink": "sprzedaz_paragonowa", "label": "menu.reportSalesReceipt" },
+      { "routerLink": "zapas_na_dzen", "label": "menu.reportSupplyDay" },
+      { "routerLink": "zapas_na_dzen_porownawczy", "label": "menu.reportSupplyComparative" },
+      { "routerLink": "rejestr_sprzedazy_vat", "label": "menu.reportVatSalesRegister" },
+      { "routerLink": "koszt_wlasny", "label": "menu.reportOwnCost" },
+      { "routerLink": "inwentaryzacja", "label": "menu.reportInventarization" },
+      { "routerLink": "dokumenty", "label": "menu.reportDocuments" },
+      { "routerLink": "sklepy", "label": "menu.reportStore" }
+    ]
+  },
+
+  { "menuName": "resources", "label": "menu.resourcesReport", "showChildren": true, "children": [] },
+
+  { "menuName": "info", "label": "menu.infoReport", "showChildren": true, "children": [] },
+
+  { "menuName": "summary", "label": "menu.summaryReport", "showChildren": true, "children":
+    [
+      { "routerLink": "analiza_sprzedazy", "label": "menu.reportSalesAnalysis" },
+      { "routerLink": "pary_towarowe", "label": "menu.reportArticlePairs" },
+      { "routerLink": "sprzedaz_artykulow_wg_kartotek", "label": "menu.reportSalesArticlesByRecords" },
+      { "routerLink": "sprzedaz_artykulow_wg_struktury", "label": "menu.reportSalesArticlesByStructure" },
+      { "routerLink": "sprzedaz_tygodniowa", "label": "menu.reportSalesWeekly" },
+      { "routerLink": "sprzedaz_wg_kartotek_i_marzy", "label": "menu.reportSalesByRecordsAndMargin" },
+      { "routerLink": "sprzedaz_wg_producentow", "label": "menu.reportSalesByProducers" },
+      { "routerLink": "sprzedaz_wg_struktury_i_udzialu", "label": "menu.reportSalesByStructureAndShare" },
+      { "routerLink": "sprzedaz_wg_struktury_i_marzy", "label": "menu.reportSalesByStructureAndMargin" },
+      { "routerLink": "porownanie_sprzedazy_towarow_za_okres", "label": "menu.reportSalesArticlesComparison" }
+    ]
+  },
+
+  { "menuName": "analysis", "label": "menu.analysisReport", "showChildren": true, "children": [] },
+
+  { "menuName": "records", "label": "menu.recordsReport", "showChildren": true, "children": [] },
+
+  { "menuName": "reportList", "label": "menu.reportList", "showChildren": true, "children":
+    [
+      { "routerLink": "lista_raportow", "label": "menu.reportList" }
+    ]
+  }
+
+]

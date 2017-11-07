@@ -1,0 +1,572 @@
+{
+  "common": {
+    "search": "Wyszukaj",
+    "add": "Dodaj",
+    "edit": "Edytuj",
+    "back": "Wróć",
+    "save": "Zapisz",
+    "yes": "Tak",
+    "no": "Nie",
+    "ok": "Ok",
+    "cancel": "Anuluj",
+    "close": "Zamknij",
+    "download": "Pobierz"
+  },
+
+  "validation": {
+    "required": "Pole jest wymagane",
+    "differentPasswords": "Podane hasła są różne",
+    "email": "Niepoprawny e-mail"
+  },
+
+  "dialog": {
+    "confirm": {
+      "delete": {
+          "title": "Usuwanie",
+          "message": "Potwierdź operację. Zmiany nie można cofnąć"     
+      },
+      "deactivateGuard": {
+          "title": "Zmodyfikowano wartośći",
+          "message": "Porzucić zmiany?"
+      }
+    },
+    "alert": {
+      "generic": {
+        "title": "Błąd po stronie serwera",
+        "message": "Usługa tymczasowo niedostępna"
+        },
+        "notFound": {
+          "title": "Wystąpił błąd",
+          "message": "Nieodnaleziono zasobu"
+        },
+        "permissionDenied": {
+          "title": "Brak dostępu",
+          "message": "Nie posiadasz wystarczających uprawnień"
+        },
+        "sessionExpired": {
+          "title": "Sesja wygasła",
+          "message": "Prosimy o ponowne zalogowanie"
+        }
+    }
+  },
+
+  "table": {
+    "pagination": {
+      "numberOfRows": "Liczba wierszy:",
+      "page": "Strona",
+      "of": "z"
+    }
+  },
+
+  "menu": {
+    "analysisReport": "Analiza",
+    "controlReport": "Kontrola",
+    "evidenceReport": "Ewidencja",
+    "infoReport": "Info",
+    "recordsReport": "Kartoteki",
+    "reportArticlePairs": "Pary towarowe",
+    "reportArticleDefinitions": "Definicje towarów",
+    "reportArticlesRevenueAndExpenditure": "Towary na dokumentach przychodowych i rozchodowych",
+    "reportArticlesWithoutExpenditure": "Towary bez rozchodu",
+    "reportArticlesRotation": "Rejestr dokumentów",
+    "reportArticlesPurchased": "Zakupione towary",
+    "reportCodePrintout": "Wydruk kodów",
+    "reportCompareTheNumberOfDocuments": "Porównanie ilości dokumentów",
+    "reportDiscountCard": "Klienci kart rabatowych",
+    "reportDiscountCardGeneral": "Klienci kart rabatowych (ogólni)",
+    "reportDocumentRegister": "Rejestr dokumentów MM",
+    "reportDocuments": "Dokumenty",
+    "reportInventarization": "Inwentaryzacja",
+    "reportList": "Lista raportów",
+    "reportMyBills": "Moje rachunki",
+    "reportOwnCost": "Koszt własny",
+    "reportPriceDiff": "Towary z różnicą cen",
+    "reportRotation": "Rotacja",
+    "reportRotationAndSaleInTwoTerms": "Rotacja i sprzedaż w dwóch okresach",
+    "reportSalesArticlesByRecords": "Sprzedaż towarów wg kartotek",
+    "reportSalesArticlesByStructure": "Sprzedaż towarów wg struktury",
+    "reportSalesAnalysis": "Analiza sprzedaży",
+    "reportSalesByRecordsAndMargin": "Sprzedaż wg kartotek i marży",
+    "reportSalesByStructureAndShare": "Sprzedaż wg struktury i udziału",
+    "reportSalesByStructureAndMargin": "Sprzedaż wg struktury i marży",
+    "reportSalesByProducers": "Sprzedaż wg prodcentów",
+    "reportSalesWeekly": "Sprzedaż tygodniowa",
+    "reportSalesArticlesComparison": "Porównanie sprzedaży towarow",
+    "reportSalesReceipt": "Sprzedaż paragonowa",
+    "reportStore": "Raport sklepowy",
+    "reportSupplyComparative": "Zapas porównawczy",
+    "reportSupplyDay": "Zapas na dzień",
+    "reportVatSalesRegister": "Rejestr sprzedaży VAT",
+    "resourcesReport": "Zasoby",
+    "summaryReport": "Zestawienia",
+    "users": "Użytkownicy"
+  },
+
+  "auth": {
+    "loginPanel": "Panel logowania",
+    "username": "Nazwa użytkownika",
+    "password": "Hasło",
+    "signIn": "Zaloguj się",
+    "invalidCredentials": "Niepoprawna nazwa użytkownika lub hasło",
+    "signOut": "Wyloguj się",
+    "backToGateway": "Przejdź do wyboru aplikacji"
+  },
+
+  "article": {
+    "name": "Nazwa towaru",
+    "barcode": "Kod kreskowy"
+  },
+
+  "articleList": {
+    "name": "Nazwa listy towarów",
+    "type": "Rodzaj",
+    "approved": "Zatwierdzona",
+    "article": {
+      "name": "Nazwa towaru"
+    }
+  },
+
+  "brandAttribute": {
+    "title": "Atrybuty marki",
+    "description": "Opis",
+    "id": "Atrybutu marki",
+    "search": "Wyszukaj po atrybucie lub opisie"
+  },
+
+  "contractor": {
+    "title": "Kontrahenci",
+    "name": "Nazwa kontrahenta",
+    "symbol": "Symbol"
+  },
+
+  "documentType": {
+    "id": "Rodzaj dokumentu",
+    "documentTypeGroup": "Grupa dokumentu",
+    "name": "Nazwa"
+  },
+
+  "location": {
+    "title": "Położenia",
+    "name": "Nazwa położenia",
+    "symbol": "Symbol"
+  },
+
+  "measureUnit": {
+    "title": "Jednostki miary",
+    "name": "Nazwa jednostki miary",
+    "symbol": "Symbol",
+    "search": "Wyszukaj po nazwie jednostki mary lub symbolu"
+  },
+
+  "orderUnit": {
+    "title": "Jednostki zamówienia",
+    "description": "Opis",
+    "id": "Jednostka zamówienia",
+    "search": "Wyszukaj po jednostce zamówienia lub opisie"
+  },
+
+  "producer": {
+    "title": "Producenci",
+    "name": "Nazwa producenta",
+    "symbol": "Symbol",
+    "search": "Wyszukaj po nazwie producenta lub symbolu"
+  },
+
+  "report": {
+    "article": {
+      "self": "Towar",
+      "attributes": "Atrybuty towaru",
+      "status": {
+        "self": "Status towaru",
+        "": "Wszystkie",
+        "0": "Aktywny",
+        "1": "Usunięty",
+        "2": "Zabroniony do zakup",
+        "3": "Zabroniony do sprzedaży",
+        "4": "Zamrożony"
+      },
+      "structure": {
+        "level": "Poziom",
+        "self": "Struktura towarowa",
+        "number": "Numer"
+      },
+      "list": "Lista towarów"
+    },
+    "brandAttribute": "Atrybut marki",
+    "cashRegister": {
+      "self": "Kasy",
+      "all": "Wszystkie"
+    },
+    "cardNumber": "Numer karty",
+    "contractor": "Kontrahent",
+    "date": {
+      "from": "Data od",
+      "self": "Data",
+      "to": "Data do"
+    },
+    "documents": {
+      "self": "Dokumenty",
+      "fa": "Faktura VAT",
+      "fap": "Faktura VAT do paragonu",
+      "kfa": "Korekta faktury VAT",
+      "kfap": "Korekta faktury VAT do paragonu",
+      "mmm": "Przesunięcie rozchód",
+      "par": "Paragon",
+      "ps": "Protokół szkody",
+      "rw": "Rozchód wewnętrzny",
+      "wz": "Wydanie zewnętrzne",
+      "zwd": "Zwrot do dostawcy",
+      "zwp": "Zwrot ze sprzedaży"
+    },
+    "documentType": {
+      "self": "Rodzaje dokumentów",
+      "multi": "Rodzaje dokumentów",
+      "all": "Wszystkie rodzaje dokumentów"
+    },
+    "format": "Format raportu",
+    "identyfication": {
+      "self": "Identyfikacja",
+      "firstName": "Imie",
+      "lastName": "Nazwisko"
+    },
+    "inputGroup": {
+      "dates": "Daty",
+      "store": "Sklep"
+    },
+    "location": "Położenie",
+    "mask": {
+      "barcode": "Kod kreskowy zawiera",
+      "description": "Opis zawiera",
+      "name": "Nazwa zawiera",
+      "pkwiu": "PKWiU zawiera",
+      "sww": "SWW zawiera"
+    },
+    "measurementUnit": "Jednostka miary",
+    "minSupplierPriority": {
+      "self": "Minimalny priorytet dostawcy",
+      "1000": "Wszyscy",
+      "1001": "Brak"
+    },
+    "orderDirection": {
+      "self": "Kierunek",
+      "asc": "Rosnąco",
+      "desc": "Malejąco"
+    },
+    "orderUnit": "Jednostka zamówienia",
+    "others": "Pozostałe",
+    "producer": "Producent",
+    "send": "Wyślij",
+    "sortBy": {
+      "self": "Sortuj według",
+      "articleName": "Nazwy towaru",
+      "asc": "Rosnąco",
+      "barCode": "Kodu kreskowego",
+      "codes": "Kodów",
+      "date": "Daty",
+      "desc": "Malejąco",
+      "kod": "Kodu towaru",
+      "name": "Nazwy towaru",
+      "nazwa": "Nazwy towaru",
+      "structure6Level": "6 - poziomu struktury"
+    },
+    "supplier": "Dostawca",
+    "states": {
+      "self": "Stany",
+      ">0": " > 0",
+      "<0": " < 0",
+      "=0": " = 0 ",
+      "<>": " <> ",
+      "all": "wszystkie",
+      "od-do": "od - do",
+      "from": "Od",
+      "to": "Do"
+    },
+    "store": {
+      "self": "Sklep",
+      "multi": "Sklepy",
+      "all": "Wszystkie sklepy"
+    },
+    "onlySum": "Tylko podsumowanie",
+    "vat": "VAT",
+    "quantityArticlesHighestMargin": "Ilość towarów o najwyższej marży",
+    "quantityArticlesLowestMargin": "Ilość towarów o najniższej marży"
+  },
+
+  "reportArticleDefinitions": {
+    "title": "Definicje towarów"
+  },
+
+  "reportArticlePairs": {
+      "title": "Pary towarowe - paragony",
+      "minQuantityReceipt": "Minimalna ilość paragonów"
+  },
+
+  "reportArticlesRevenueAndExpenditure": {
+    "title": "Towary na dokumentach przychodowych i rozchodowych",
+    "dates": {
+      "dateRevenue": "Okresy przychodowe",
+      "dateExpenditure": "Okresy rozchodowe"
+    },
+    "articlesStructureDiscount": "Struktura towarowa - przeceny",
+    "prefix": "Prefix"
+  },
+
+  "reportArticlesWithoutExpenditure": {
+    "title": "Towary bez rozchodu",
+    "numberOfDays": "Liczba dni"
+  },
+
+  "reportArticlesRotation": {
+    "title": "Rejestr dokumentów"
+  },
+
+  "reportArticlesPurchased": {
+    "title": "Zakupione towary",
+    "storesView": "Towary bez rozbicia na sklepy"
+  },
+
+  "reportCodePrintout": {
+    "title": "Wydruk kodów",
+    "group": "Rozbij na daty",
+    "groupBy": {
+      "self": "Grupa uprawnień",
+      "administrator": "Administrator",
+      "serwis": "Serwis",
+      "kierownik": "Kierownik",
+      "operator": "Operator"
+    },
+    "sourcePrint": {
+      "self": "Źródło wydruku",
+      "0": "Wszystkie",
+      "1": "Przeglądarka wydruków",
+      "2": "Po zatwierdzeniu przeceny",
+      "3": "Przeglądarka towarów",
+      "4": "Zapas"
+    }
+  },
+
+  "reportCompareTheNumberOfDocuments": {
+    "title": "Porównanie ilości dokumentów"
+  },
+
+  "reportDialog": {
+    "actionDate": "Data wygenerowania",
+    "downloadNew": "Pobierz nowy raport",
+    "fileName": "Nazwa raportu",
+    "title": "Wygenerowano nowy raport",
+    "errorTitle": "Nie wygenerowano raportu",
+    "errorMessage": "Podczas generowania raportu wystąpił błąd"
+  },
+
+  "reportDiscountCard": {
+    "title": "Klienci kart rabatowych"
+  },
+
+  "reportDiscountCardGeneral": {
+    "title": "Klienci kart rabatowych (ogólni)"
+  },
+
+  "reportDocumentRegister": {
+    "title": "Rejestr dokumentów MM",
+    "mmp": "Przesunięcie MM+",
+    "mmm": "Przesunięcie MM-"
+  },
+
+  "reportDocuments": {
+    "title": "Dokumenty",
+    "par": "Dołącz paragony"
+  },
+
+  "reportInventarization": {
+    "title": "Inwentaryzacja",
+    "multi": "Inwentaryzacje",
+    "order": {
+      "quantitySurplusAsc": "Ilość, nadwyżka-rosnąco",
+      "quantityDeficitAsc": "Ilość, niedobór-rosnąco",
+      "valueSurplusAsc": "Wartość, nadwyżka-rosnąco",
+      "valueDeficitAsc": "Wartość, niedobór-rosnąco",
+      "quantitySurplusDesc": "Ilość, nadwyżka-malejąco",
+      "quantityDeficitDesc": "Ilość, niedobór-malejąco",
+      "valueSurplusDesc": "Wartość, nadwyżka-malejąco",
+      "valueDeficitDesc": "Wartość, niedobór-malejąco",
+      "name": "Nazwa",
+      "group": "Grupa"
+    },
+    "onlyNegativeStates": "Tylko negatywne stany"
+  },
+
+  "reportList": {
+    "title": "Lista raportów",
+    "name": "Nazwa raportu",
+    "date": "Data wygenerowania",
+    "status": {
+      "self": "Status raportu",
+      "0": "Rozpoczęty",
+      "1": "Skończony"
+    },
+    "actions": {
+      "self": "Akcje",
+      "download": "Pobierz",
+      "remove": "Usuń"
+    }
+  },
+
+  "reportMyBills": {
+    "title": "Moje rachunki"
+  },
+
+  "reportOwnCost": {
+    "title": "Koszt własny"
+  },
+
+  "reportPriceDiff": {
+    "title": "Różnice w stosunku do ustalonych cen zakupu"
+  },
+
+  "reportRotation": {
+    "title": "Rotacja",
+    "articles": {
+      "self": "Rotacja towarów",
+      "rotationFrom": "Rotacja od",
+      "rotationTo": "Rotacja do",
+      "minDaysLackSupply": "Minimalna liczba dni braku zapasu",
+      "quantityLackSupply": "Ilość towaru przyjmowana za brak zapasu"
+    },
+    "rotationType": {
+      "self": "Rotacja według",
+      "article": "Towaru",
+      "structure": "Struktury towarowej"
+    }
+  },
+
+  "reportRotationAndSaleInTwoTerms": {
+    "title": "Rotacja i sprzedaż w dwóch okresach"
+  },
+
+  "reportSalesArticlesByRecords": {
+    "title": "Sprzedaż towarów wg kartotek",
+    "margin": {
+      "self": "Marża",
+      "od": "Od",
+      "do": "Do"
+    },
+    "showStockStatus": "Pokaż stan magazynowy",
+    "showZeroArticles": "Pokaż towary zerowe"
+  },
+
+  "reportSalesArticlesByStructure": {
+    "title": "Sprzedaż towarów wg struktury"
+  },
+
+  "reportSalesAnalysis": {
+    "title": "Analiza sprzedaży",
+    "quantity": "Ilość wyświetlonych towarów",
+    "quantityAll": "Wszystkie",
+    "sortByOut": {
+      "self":"Sortowanie zewnętrzne wg",
+      "articleName": "Nazwa towaru",
+      "quantity": "Ilość",
+      "purchaseValue": "Wartość zakupu",
+      "saleValue": "Wartość sprzedaży",
+      "margin": "Marża"
+    },
+    "sortByIn": {
+      "self": "Sortowanie wewnętrzne wg",
+      "storeNumber": "Numer sklepu",
+      "quantity": "Ilość",
+      "purchaseValue": "Wartość zakupu",
+      "saleValue": "Wartość sprzedaży",
+      "margin": "Marża",
+      "marginPercent": "% marży",
+      "rotation": "Rotacja"
+    },
+    "rotationFrom": "Rotacja od",
+    "rotationTo": "Rotacja do",
+    "minDaysLackSupply": "Minimalna liczba dni braku zapasu",
+    "quantityLackSupply": "Ilość towaru przyjmowana za brak zapasu"
+  },
+
+  "reportSalesByRecordsAndMargin": {
+    "title": "Sprzedaż wg kartotek i marży"
+  },
+
+  "reportSalesByProducers": {
+    "title": "Sprzedaż wg producentów"
+  },
+
+  "reportSalesByStructureAndShare": {
+    "title": "Sprzedaż wg struktury i udziału"
+  },
+
+  "reportSalesByStructureAndMargin": {
+    "title": "Sprzedaż wg struktury i marży"
+  },
+
+  "reportSalesReceipt": {
+    "title": "Sprzedaż paragonowa"
+  },
+
+  "reportSalesWeekly": {
+    "title": "Sprzedaż tygodniowa"
+  },
+
+  "reportSalesArticlesComparison": {
+    "title": "Porównanie sprzedaży towarow",
+    "zeroArticles": "Pokaż towary z zerowymi wartościami"
+  },
+
+  "reportStore": {
+    "title": "Raport sklepowy"
+  },
+
+  "reportSupplyComparative": {
+    "title": "Zapas porównawczy",
+    "articlesView": "Towary dla poszczególnych sklepów",
+    "storesSum": "Podsumowania dla poszczególnych sklepów",
+    "totalSum": "Podsumowanie dla wszystkich sklepów",
+    "purchaseNettoPrice": "Rozbicie na ceny zakupu netto"
+  },
+
+  "reportSupplyDay": {
+    "title": "Zapas na dzień"
+  },
+
+  "reportVatSalesRegister": {
+    "title": "Rejestr sprzedaży VAT"
+  },
+
+  "store": {
+    "number": "Numer sklepu",
+    "name": "Nazwa"
+  },
+
+  "supplier": {
+    "title": "Dostawcy",
+    "name": "Nazwa dostawcy",
+    "symbol": "Symbol",
+    "search": "Wyszukaj po nazwie dostawcy lub symbolu"
+  },
+
+  "user": {
+    "title": "Użytkownicy",
+    "username": "Nazwa użytkownika",
+    "firstname": "Imię",
+    "lastname": "Nazwisko",
+    "permissionGroup": "Grupa uprawnień",
+    "password": "Hasło",
+    "rePassword": "Powtórz hasło",
+    "email": "E-mail",
+    "status": "Status",
+    "active": "Aktywny",
+    "unactive": "Nieaktywny",
+    "forAction": "użytkownika"
+  },
+
+  "vat": {
+    "rate": "Stawka VAT",
+    "value": "Wartość",
+    "symbol": "Symbol",
+    "description": "Opis"
+  }
+
+}
